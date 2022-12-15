@@ -30,9 +30,6 @@ const HomePage: React.FC<{}> = (props) => {
     const [backgroundColor, setBackgroundColor] = useState('#dcdcde');
 
     useEffect(() => {
-        if (currentPage > 1) {
-            setCurrentPage(1);
-        }
 
         const fn = async () => {
 
@@ -46,6 +43,8 @@ const HomePage: React.FC<{}> = (props) => {
         }
 
         fn();
+
+        return () => setCurrentPage(1);
 
     }, [searchText]);
 
