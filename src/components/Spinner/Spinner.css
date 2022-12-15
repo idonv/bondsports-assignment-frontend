@@ -1,0 +1,18 @@
+.spinner {
+    display: flex;
+    flex-grow: 1;
+    width: 50%;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.spinner_ajPY{
+    transform-origin:center;
+    animation:spinner_AtaB .75s infinite linear}@keyframes spinner_AtaB{100%{transform:rotate(360deg)}
+}

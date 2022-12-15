@@ -1,0 +1,53 @@
+.list {
+    height: 100%;
+    overflow: scroll;
+    scrollbar-width: 10;
+    overflow-x: hidden;
+
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    font-size: 15px;
+    list-style-type: none;
+    height: 10%;
+    flex-grow: 1;
+    text-align: center;
+    background: #add8e6;
+    margin: 10px;
+    box-shadow: 5px 5px 5px  gray;
+    border-radius: 5px;
+    text-overflow: clip;
+}
+
+.player-grid {
+    display: grid; 
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    align-items: space-between;
+}
+
+.grid-column {
+    display: grid; 
+    text-align: center; 
+    grid-template-rows: 1fr 2fr; 
+    height: 100%;
+}
+
+.select-button { 
+    height: 25px;
+    width: 25px; 
+    margin-top: 25px;
+    border-color: gray;
+    border-width: 2px;
+    box-shadow: none;
+    border-radius: 50%
+}
+
+.select-button:hover {
+    cursor: pointer;
+}
